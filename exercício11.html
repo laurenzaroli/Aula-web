@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Virtual</h1>
+        <picture><source media="(max-width: 525px)" srcset="flexível" type="image/jpg">
+            <img src="Imagens/biblio.png" alt="Imagem 1" width="250" height="150">
+        </picture>
+        <p></p>
+
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h3>Empréstimo Literário</h3>
+                <p>Preencha os campos abaixo para o registro do exemplar emprestado.<br></p>
+                <form method="post" action="#">
+                    <fieldset>
+                        <legend>Dados de empréstimo</legend>
+                            <label>Nome</label>
+                            <input type="text" name="nome" placeholder="digite seu nome" required>
+                            <label>Data de empréstimo</label>
+                            <input type="date" name="data_empréstimo" required>
+                            <label>Contato</label>
+                            <input type="tel" name="contato" placeholder="(XX) XXXXX-XXXX" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>ISBN</legend>
+                            <label>International Standard Book Number</label>
+                            <input type="text" name="International Standard Book Number" placeholder="informe o ISBN" required>
+                            <label>Data de devolução</label>
+                            <input type="date" name="data_devolução" required>
+                    </fieldset>
+                    <fieldset>
+                    <fieldset>
+                        <legend>Controle de popularidade</legend>
+                            <label>Editora do livro</label>
+                            <select name="Editora" required>
+                                <option value="">Selecione a editora do livro</option>
+                                <optgroup label="Galera">
+                                  <option value="gol">2020</option>
+                                  <option value="golf">2021</option>
+                                  <option value="fox">2022</option>
+                                </optgroup>
+                                <optgroup label="Alt">
+                                  <option value="uno">2020</option>
+                                  <option value="siena">2021</option>
+                                  <option value="Palio">2022</option>
+                                </optgroup>
+                                <optgroup label="Arqueiro">
+                                  <option value="frontier">2019</option>
+                                  <option value="versa">2020</option>
+                                  <option value="skyline">2021</option>
+                                </optgroup>
+                            </select>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Enviar dados</button>
+                </form>
+            </section>
+        </main>
+    <hr>
+<footer>
+    <p>2023 - empréstimo de livros</p>
+</footer>
+</body>
+</html>
