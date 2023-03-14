@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seja um sócio do clube</title>
+    <link rel="ícone" href="Imagens/ícone futebol clube.png" type="image/x-icon">
 </head>
 <body>
     <h1>Seja um sócio do clube</h1>
@@ -68,18 +69,20 @@
         <section>
             <form method="post" action="#">
               <fieldset>
-                <legend>Dados Pessoais</legend>
+                <legend><strong>Dados Pessoais</strong></legend>
                 <label>Nome</label>
                 <input type="text" name="nome" placeholder="digite seu nome" required>
                 <label>Data de Nascimento</label>
                 <input type="date" name="Data" required>
                 <label>Telefone</label>
                 <input type="number" name="Telefone" placeholder="XXXXX-XXXX" required>
+                <label>CPF</label>
+                <input type="number" name="CPF" placeholder="XXX.XXX.XXX-XX" required>
                 <label>email</label>
                 <input type="email" name="email" placeholder="a@a.com" required>
               </fieldset>  
               <fieldset>
-                <legend>Endereço</legend>
+                <legend><strong>Endereço</strong></legend>
                 <label>Endereço</label>
                 <input type="text" name="endereço" placeholder="digite seu endereço" required>
                 <label>Cidade</label>
@@ -116,17 +119,45 @@
                       <option value="TO">Tocantins</option>
               </fieldset>
               <fieldset>
-                <legend>Plano</legend>
-                
-              </fieldset>
+                <legend><strong>Plano</strong></legend>
+                <input type="radio" name="Planos" placeholder="Plano Margarida" required>
+                <label>Plano Margarida</label>
+                <input type="radio" name="Planos" placeholder="Plano Margarida" required>
+                <label>Plano Girassol</label>
+                <input type="radio" name="Planos" placeholder="Plano Margarida" required>
+                <label>Plano Orquídea</label>
+                <input type="radio" name="Planos" placeholder="Plano Margarida" required>
+                <label>Plano Violeta</label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Fale sobre sua PAIXÃO pelas Meninas da Vila</strong></legend>
+                <form method="post" action="#" >
+                    <textarea name="sugestao" style="resize: none" required="yes" rows="7"cols="50"></textarea>
+                    <br>
+                    <button type="submit">Enviar Resposta</button>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Termos de Contrato</strong></legend>
+                <p>O sócio deve manter seu valor de contribuição ou alterá-lo em caso de adição. Deve também comparecer a torcida, afinal, este ama o time <b>Meninas da Vila</b></p>
+                <input type="checkbox">
+                <label>Li e aceito termos de contrato.</label>
+                <input type="checkbox">
+                <label>Aceito receber notícias pelos contatos informados.</label>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar dados</button> 
             </form>
         </section>
     </main>
+    <br>
+    <br>
         <a href="exercício12.html"><button>Voltar</button></a>
     <hr>
     <footer align="center">
         <p><small><b>Copyright 2023 &copy; - Tec. Multimídia</b></small></p>
         <p>Santa Cruz do Rio Pardo - SP</p>
     </footer>
+
 </body>
 </html>
